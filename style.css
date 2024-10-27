@@ -1,33 +1,106 @@
-body {
-    font-family: Arial, sans-serif;
+/* Base Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
     color: #333;
-}
-
-header {
-    background: #4CAF50;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-section {
-    padding: 20px;
-}
-
-h2 {
-    color: #4CAF50;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 5px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
+    background-color: #f4f4f9;
 }
 
 a {
     color: #4CAF50;
     text-decoration: none;
+    font-weight: bold;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Section Styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Job, Education, Project, and Skill Styling */
+.job, .education-item, .project, .skill-category {
+    margin-bottom: 20px;
+}
+
+.job h3, .project h3, .skill-category h4 {
+    font-size: 1.3em;
+    color: #333;
+}
+
+/* Skills */
+.skill-category ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.skill-category ul li {
+    margin-bottom: 5px;
+}
+
+/* Animation */
+section, header {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
 }
